@@ -57,12 +57,40 @@ void setScale(uint8_t scaleSelector) {
       scaleLength = sizeof(scale_minor_triad) / sizeof(uint16_t);
       break;
     case 5:
+      selectedScale = scale_major_triad_sixth;
+      scaleLength = sizeof(scale_major_triad_sixth) / sizeof(uint16_t);
+      break;
+    case 6:
+      selectedScale = scale_minor_triad_sixth;
+      scaleLength = sizeof(scale_minor_triad_sixth) / sizeof(uint16_t);
+      break;
+    case 7:
+      selectedScale = scale_major_triad_seventh;
+      scaleLength = sizeof(scale_major_triad_sixth) / sizeof(uint16_t);
+      break;
+    case 8:
+      selectedScale = scale_minor_triad_seventh;
+      scaleLength = sizeof(scale_minor_triad_sixth) / sizeof(uint16_t);
+      break;
+    case 9:
       selectedScale = scale_pentatonic_major;
       scaleLength = sizeof(scale_pentatonic_major) / sizeof(uint16_t);
       break;
-    case 6:
+    case 10:
       selectedScale = scale_pentatonic_minor;
       scaleLength = sizeof(scale_pentatonic_minor) / sizeof(uint16_t);
+      break;
+    case 11:
+      selectedScale = scale_blues_major;
+      scaleLength = sizeof(scale_blues_major) / sizeof(uint16_t);
+      break;
+    case 12:
+      selectedScale = scale_blues_minor;
+      scaleLength = sizeof(scale_blues_minor) / sizeof(uint16_t);
+      break;
+    case 13:
+      selectedScale = scale_dorian;
+      scaleLength = sizeof(scale_dorian) / sizeof(uint16_t);
       break;
   }
 }
